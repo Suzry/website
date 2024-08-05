@@ -28,9 +28,7 @@
     let isSheetOpen = false;
 </script>
 
-<div
-    class="shadow-xl  bg-secondary text-secondary-foreground py-8 px-6"
->
+<div class="shadow-xl bg-secondary text-secondary-foreground py-8 px-6">
     <nav class="max-w-screen-2xl flex items-center justify-between mx-auto">
         <div class="flex items-center gap-2">
             <div class="bg-primary w-5 h-5 me-4" />
@@ -40,8 +38,8 @@
             </div>
         </div>
 
-        <div class="flex ">
-            <ThemeSwitch/>
+        <div class="flex">
+            <ThemeSwitch />
             <!-- large -->
             <div class="uppercase hidden lg:flex">
                 {#each links as link}
@@ -60,7 +58,7 @@
                 <Sheet.Trigger class="flex lg:hidden">
                     <Button class size="icon" variant="ghost">
                         <svg
-                        class="w-6 h-auto"
+                            class="w-6 h-auto"
                             xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 512 512"
                             ><path
@@ -74,20 +72,21 @@
                         >
                     </Button>
                 </Sheet.Trigger>
-                <Sheet.Content class="flex flex-col items-center justify-center">
+                <Sheet.Content
+                    class="flex flex-col items-center justify-center"
+                >
                     {#each links as link}
-                    <Button
-                        class="text-xl  {$page.url.pathname == link.href &&
-                            'text-primary'}"
-                        href={link.href}
-                        variant="link"
-                        on:click={()=> isSheetOpen = false}
-                        >{link.text}
-                    </Button>
-                {/each}
+                        <Button
+                            class="text-xl  {$page.url.pathname == link.href &&
+                                'text-primary'}"
+                            href={link.href}
+                            variant="link"
+                            on:click={() => (isSheetOpen = false)}
+                            >{link.text}
+                        </Button>
+                    {/each}
                 </Sheet.Content>
             </Sheet.Root>
-
         </div>
     </nav>
 </div>
