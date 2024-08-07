@@ -1,12 +1,18 @@
 <script>
     import ThemeSwitch from "$lib/components/themeSwitch.svelte";
     import Button from "$lib/components/ui/button/button.svelte";
+    import { Title } from "$lib/components/ui/sheet";
+    import SocialMedia from "$lib/components/SocialMedia.svelte"
 </script>
 
-<div class="flex justify-end">
-    <div class="bg-secondary min-h-[calc(100dvh-6.5rem)] w-[60dvw] relative shadow-2xl">
+<title> Mohammed </title>
+
+<div class="flex justify-end pb-[35rem] lg:pb-0 ">
+    <div
+        class="bg-secondary text-secondary-foreground relative  w-full lg:w-[60vw] min-h-[40vh] lg:min-h-[calc(100dvh-10.5rem)] flex justify-center items-center pb-32"
+    >
         <div
-            class=" bg-[#f4ece6] shadow-[0_10px_60px_-15px_rgba(0,0,0,0.7)]  w-[25rem] absolute start-10 -translate-x-full translate-y-1/4  items-center flex flex-col justify-between pt-8 gap-2"
+            class=" bg-[#f4ece6] dark:bg-[#303030] shadow-[0_10px_60px_-15px_rgba(0,0,0,0.7)] w-[22rem] absolute lg:start-10 lg:-translate-x-full  items-center flex flex-col justify-between pt-8 gap-2 self-bottom lg:self-start  translate-y-[105%] lg:translate-y-[10%] max-w-[80dw]"
         >
             <img
                 src="https://media-pmo1-1.cdn.whatsapp.net/v/t61.24694-24/408169282_234811572970656_4218674785800751800_n.jpg?ccb=11-4&oh=01_Q5AaIIQGAvatrtmCGnkVGJrg9g1mojOvF_kxHCdz_BvnaaYG&oe=66BE496E&_nc_sid=5e03e0&_nc_cat=101"
@@ -15,14 +21,38 @@
             />
             <div class=" flex flex-col items-center gap-8">
                 <h1 class=" font-bold text-4xl">Mohammed</h1>
-                <hr class=" w-24 border-2 boarder-primary"/>
-                <h2 class="text-2xl">Developer</h2> 
+                <hr class=" w-24 border-2 border-primary " />
+                <h2 class="text-2xl">Web Developer</h2>
             </div>
-        <div class="bg-secondary w-full flex justify-center p-2 mt-12">
-            <Button variant="ghost" size="icon" href="https://x.com/Suzry__"><svg class="h-auto w-6" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 512 512"><path fill="currentColor" d="M389.2 48h70.6L305.6 224.2L487 464H345L233.7 318.6L106.5 464H35.8l164.9-188.5L26.8 48h145.6l100.5 132.9zm-24.8 373.8h39.1L151.1 88h-42z"/></svg></Button>
-            <Button variant="ghost" size="icon" href="https://www.linkedin.com/in/%D9%85%D8%AD%D9%85%D8%AF-%D8%A7%D9%84%D8%AD%D8%B1%D8%A8%D9%8A-160aa92a5/"><svg class="h-auto w-6" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 448 512"><path fill="currentColor" d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3M447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2c-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3c94 0 111.28 61.9 111.28 142.3V448z"/></svg></Button>
-            <Button variant="ghost" size="icon" href="https://www.instagram.com/ve1k/"><svg class="h-auto w-6" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 448 512"><path fill="currentColor" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9S287.7 141 224.1 141m0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7s74.7 33.5 74.7 74.7s-33.6 74.7-74.7 74.7m146.4-194.3c0 14.9-12 26.8-26.8 26.8c-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8s26.8 12 26.8 26.8m76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9c-26.2-26.2-58-34.4-93.9-36.2c-37-2.1-147.9-2.1-184.9 0c-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9c1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0c35.9-1.7 67.7-9.9 93.9-36.2c26.2-26.2 34.4-58 36.2-93.9c2.1-37 2.1-147.8 0-184.8M398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6c-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6c-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6c29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6c11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1"/></svg></Button>
+            <div
+                class="bg-secondary text-secondary-foreground w-full flex justify-center p-2 mt-12 gap-5"
+            >
+                <SocialMedia/>
+            </div>
         </div>
+        <div class=" mx-10 max-w-[30rem] flex flex-col gap-8">
+            <h1 class="text-8xl font-extrabold">
+                Hello
+            </h1>
+            <h4 class="text-4xl">
+                Here's who I am & what I do
+            </h4>
+            <div class="flex gap-2">
+                <Button class="w-32" href="/resume">
+                    Resume
+                </Button>
+                <Button class="w-32" variant="outline"  href = "/projects">
+                    Projects
+                </Button>
+            </div>
+            <div>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam provident quaerat, necessitatibus modi consequuntur a dolore ducimus quia repellendus. Laborum ab repellendus atque delectus dicta quod incidunt similique laudantium sequi?
+                </p>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic quasi odit sapiente tenetur itaque quod. Aliquid assumenda, cupiditate corrupti quam atque voluptatibus natus modi at quae expedita accusantium perspiciatis maxime.
+                </p>
+            </div>
         </div>
     </div>
 </div>
