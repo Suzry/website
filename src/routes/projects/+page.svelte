@@ -6,7 +6,7 @@
     
     
 </script>
-<title> Mohammed </title>
+<title> Mohammed - Projects</title>
 
 <Container class="flex flex-col gap-16">
     <Title title="Project"/>

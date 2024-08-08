@@ -5,7 +5,7 @@
     import SocialMedia from "$lib/components/SocialMedia.svelte"
 </script>
 
-<title> Mohammed </title>
+<title> Mohammed - Web Developer </title>
 
 <div class="flex justify-end pb-[35rem] lg:pb-0 ">
     <div
