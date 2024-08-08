@@ -5,6 +5,7 @@
     import Title from "$lib/components/Title.svelte"
     import Container from "$lib/components/Container.svelte"
 </script>
+<title> Mohammed </title>
 
 <Container>
     <Title title="Resume"/>

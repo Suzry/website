@@ -6,6 +6,8 @@
     
     
 </script>
+<title> Mohammed </title>
+
 <Container class="flex flex-col gap-16">
     <Title title="Project"/>
 

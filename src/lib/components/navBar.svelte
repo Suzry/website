@@ -21,10 +21,10 @@
             text: "Projects",
             href: "/projects",
         },
-        {
-            text: "Contact",
-            href: "/contact",
-        },
+        // {
+        //     text: "Contact",
+        //     href: "/contact",
+        // },
     ];
     let isSheetOpen = false;
 </script>
