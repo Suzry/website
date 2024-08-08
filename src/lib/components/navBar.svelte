@@ -6,6 +6,7 @@
     import { text } from "@sveltejs/kit";
     import ThemeSwitch from "./themeSwitch.svelte";
     import * as Sheet from "$lib/components/ui/sheet";
+    import Title from "./Title.svelte";
 
     const links = [
         {
@@ -31,9 +32,8 @@
 <div class="shadow-xl bg-secondary text-secondary-foreground py-8 px-6">
     <nav class="max-w-screen-2xl flex items-center justify-between mx-auto">
         <a href="/" class="flex items-center gap-2">
-            <div class="bg-primary w-5 h-5 me-4" />
             <div class="flex items-end gap-1">
-                <span class="font-bold text-3xl">Mohammed</span>
+                <Title title="Mohammed" class="text-3xl"/>
                 <span class="text-xl uppercase hidden sm:flex">/ Web Developer</span>
                 <!-- flat -->
             </div>

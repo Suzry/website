@@ -27,35 +27,37 @@
     --radius: 0rem;
   }
   .dark {
-    --background: 0 0% 0%;
-    --foreground: 30 32% 85%;
+    --background: 0 0% 10%; /* Dark background */
+    --foreground: 0 0% 90%; /* Light foreground text for contrast */
 
-    --primary: 221 100% 50%;
-    --primary-foreground: 0 0% 100%;
+    --primary: 210 100% 40%; /* Darker blue for primary */
+    --primary-foreground: 0 0% 100%; /* White text on primary */
 
-    --secondary: 30 32% 85%;
-    --secondary-foreground: 0 0% 0%;
+    --secondary: 200 30% 25%; /* Dark teal for secondary */
+    --secondary-foreground: 0 0% 100%; /* White text on secondary */
 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 24 9.8% 10%;
+    --destructive: 0 60% 40%; /* Darker red */
+    --destructive-foreground: 0 0% 100%; /* White text on destructive */
 
-    --border: 20 5.9% 90%;
-    --input: 20 5.9% 90%;
-    --ring: 20 5.9% 4.1%;
-    --radius:0rem;
+    --border: 0 0% 25%; /* Darker border for visibility */
+    --input: 0 0% 20%; /* Darker input fields for better integration */
+    --ring: 210 100% 50%; /* Brighter ring for focus */
+    --radius: 0rem; /* No change in radius */
 
-    --card: 0 0% 100%;
-    --card-foreground: 20 14.3% 4.1%;
-    --popover: 0 0% 100%;
-    --popover-foreground: 20 14.3% 4.1%;
-    --muted: 60 4.8% 95.9%;
-    --muted-foreground: 25 5.3% 44.7%;
+    --card: 0 0% 15%; /* Dark card background */
+    --card-foreground: 0 0% 85%; /* Light text on card */
+    --popover: 0 0% 15%; /* Dark popover background */
+    --popover-foreground: 0 0% 85%; /* Light text on popover */
 
-    --accent: 60 4.8% 40%;
-    --accent-foreground: 0 0% 98%;
+    --muted: 0 0% 30%; /* Dark muted background */
+    --muted-foreground: 0 0% 70%; /* Light muted text */
+
+    --accent: 210 100% 40%; /* Accent color matching primary */
+    --accent-foreground: 0 0% 100%; /* White text on accent */
+}
 
 
-  }
+
 }
  
 @layer base {
