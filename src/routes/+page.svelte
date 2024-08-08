@@ -46,7 +46,7 @@
             </div>
             <div>
                 <p class="font-semibold">
-                    I am a first-year Software Engineering SWE student at Umm Al-Qura University. I have a strong passion for technology and software development, constantly seeking to enhance my technical skills through academic and personal projects. I enjoy teamwork and collaborating with my peers on innovative solutions to technical challenges. I aspire to contribute to the development of software that improves quality of life and simplifies daily tasks for people.
+                    I am a first-year Software Engineering student at Umm Al-Qura University. I have a strong passion for technology and software development, constantly seeking to enhance my technical skills through academic and personal projects. I enjoy teamwork and collaborating with my peers on innovative solutions to technical challenges. I aspire to contribute to the development of software that improves quality of life and simplifies daily tasks for people.
                 </p>
             </div>
         </div>
